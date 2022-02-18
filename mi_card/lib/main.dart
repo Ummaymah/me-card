@@ -23,18 +23,19 @@ class Jojo extends StatefulWidget {
 }
 
 class _JojoState extends State<Jojo> {
-  double level = 77;
+  double level = 50;
+  double level1 = 50;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          setState(() {
-            level++;
-          });
-        },
-        child: Icon(Icons.add),
-      ),
+      // floatingActionButton: FloatingActionButton(
+      //   onPressed: () {
+      //     setState(() {
+      //       level++;
+      //     });
+      //   },
+      //   child: const Icon(Icons.add),
+      // ),
       backgroundColor: Colors.red.shade100,
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
@@ -55,7 +56,7 @@ class _JojoState extends State<Jojo> {
                 fontFamily: 'Lobster'),
           ),
           const SizedBox(height: 15),
-          Divider(thickness: 2.0, height: 5.0),
+          const Divider(thickness: 2.0, height: 5.0),
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: Row(
@@ -82,11 +83,35 @@ class _JojoState extends State<Jojo> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: LinearProgressIndicator(
-              value: level / 100,
+              value: level1 / 100,
               color: Colors.brown,
             ),
           ),
           if (level >= 100) Text('Congratulations')
+        ],
+      ),
+
+      floatingActionButton: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        children: [
+          FloatingActionButton(
+            heroTag: null,
+            onPressed: () {
+              setState(() {
+                level++;
+              });
+            },
+            child: const Icon(Icons.add),
+          ),
+          FloatingActionButton(
+            heroTag: null,
+            onPressed: () {
+              setState(() {
+                level1--;
+              });
+            },
+            child: const Icon(Icons.remove),
+          ),
         ],
       ),
     );

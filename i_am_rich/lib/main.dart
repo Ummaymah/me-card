@@ -9,7 +9,6 @@ void main() {
           title: Text('I am rich'),
         ),
         body: Center(child: Text('Ummaymah')),
-        AssetImage('assets/images/money-bag.png'),
       ),
     ),
   );

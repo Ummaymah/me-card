@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "878888664846",
+    "project_id": "posty-9a682",
+    "storage_bucket": "posty-9a682.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:878888664846:android:25af5504a71a60e0a9a15f",
+        "android_client_info": {
+          "package_name": "com.example.posty"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "878888664846-no7sl4dmtje3uv2vlt94798ah7731lna.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.posty",
+            "certificate_hash": "c1887a8964d4f3c0df57517fa46705b7e3f9e7c2"
+          }
+        },
+        {
+          "client_id": "878888664846-8ohpkk8o9u2sefqvokuu54jqfjqk7khi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCG678LPKNrNnzC0o7c7kF5ab796e5m5bw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "878888664846-8ohpkk8o9u2sefqvokuu54jqfjqk7khi.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "878888664846-rd7595ekoiktvf975jvs22dnoed8bpg3.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.posty"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
